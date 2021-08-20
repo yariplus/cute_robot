@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "type": "shell",
+        "label": "compile",
+        "command": "g++",
+        "args": [
+          "-o",
+          "cute_robot.exe",
+          "*.cpp",
+          "-luser32",
+          "-lgdi32",
+          "-lopengl32",
+          "-lgdiplus",
+          "-lShlwapi",
+          "-ldwmapi",
+          "-lstdc++fs",
+          "-std=c++17"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ]
+      },
+      {
+        "type": "shell",
+        "label": "run",
+        "command": "./cute_robot",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+      }
+    ]
+}
