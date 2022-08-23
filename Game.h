@@ -3,7 +3,7 @@
 
 #define _USE_MATH_DEFINES
 #include "olcPixelGameEngine.h"
-#include "g2d.h"
+#include "olcPGEX_Graphics2D.h"
 
 #include <iostream>
 #include <iomanip>
