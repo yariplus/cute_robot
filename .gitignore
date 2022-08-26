@@ -1,2 +1,8 @@
 *.code-workspace
 *.exe
+/x64/Debug
+/.vs
+/Cute Robot.vcxproj.user
+/Cute Robot.vcxproj.filters
+/Cute Robot.vcxproj
+/Cute Robot.sln
